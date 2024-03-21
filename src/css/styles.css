@@ -1,0 +1,40 @@
+#image{
+    height: 40px;
+    width: 40px;
+    border-radius: 20%;
+}
+@media only screen and (max-width: 600px) {
+    .image{
+        height: 60px;
+        width: 60px;
+        border-radius: 20%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .image{
+        height: 100px;
+        width: 100px;
+        border-radius: 20%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .image{
+        height: 150px;
+        width: 150px;
+        border-radius: 20%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
