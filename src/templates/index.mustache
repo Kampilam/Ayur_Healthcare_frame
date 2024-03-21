@@ -9,6 +9,24 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
+
+  <style>
+  .card {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card:hover img {
+    transform: scale(1.1);
+    z-index: 1;
+  }
+
+  .card img {
+    transition: transform 0.3s ease;
+    z-index: 0;
+  }
+</style>
+
   <!-- <style>
     body {
     padding-top: 56px; /* Adjust based on your navbar height */
@@ -32,10 +50,10 @@
           <!-- to do logo -->
           <!-- to do company name -->
           <div class="fw-bold text-center">
-            <a class="navbar-brand d-flex justify-content-start" href="#">
+            <a class="navbar-brand d-flex justify-content-start" href="/">
               <img src="/images/logo4.png" alt="Logo" width="35" height="35"
                 class="d-inline-block align-text-top">
-              <span class="align-self-center">Ayur Healthcar</span>
+              <span class="align-self-center">Ayur Healthcare</span>
             </a>
           </div>
         </div>
@@ -63,7 +81,7 @@
             <div class="offcanvas-body">
               <h3 class="my-5 text-secondary"><a class="nav-link" href="/">Home</a></h3>
               <h3 class="my-5 text-secondary"><a class="nav-link" href="/jobs">jobs</a></h3>
-              <h3 class="my-5 text-secondary"><a class="nav-link" href="services">Services</a></h3>
+              <h3 class="my-5 text-secondary"><a class="nav-link" href="/services">Services</a></h3>
             </div>
           </div>
           <div class="col-6 d-flex justify-content-end d-md-none">
@@ -114,7 +132,7 @@
             <div class="card-body">
               <h6 class="card-title mb-0">Product Name</h6>
               <p class="card-text">Price: $XX.XX</p>
-              <a href="#" class="btn btn-primary btn-sm">Buy Now</a>
+              <a href="/payments" class="btn btn-primary btn-sm">Buy Now</a>
             </div>
           </div>
       </div>
@@ -125,7 +143,7 @@
             <div class="card-body">
               <h6 class="card-title mb-0">Product Name</h6>
               <p class="card-text">Price: $XX.XX</p>
-              <a href="#" class="btn btn-primary btn-sm">Buy Now</a>
+              <a href="/payments" class="btn btn-primary btn-sm">Buy Now</a>
             </div>
           </div>
       </div>
@@ -136,7 +154,7 @@
             <div class="card-body">
               <h6 class="card-title mb-0">Product Name</h6>
               <p class="card-text">Price: $XX.XX</p>
-              <a href="#" class="btn btn-primary btn-sm">Buy Now</a>
+              <a href="/payments" class="btn btn-primary btn-sm">Buy Now</a>
             </div>
           </div>
       </div>
@@ -147,7 +165,7 @@
             <div class="card-body">
               <h6 class="card-title mb-0">Product Name</h6>
               <p class="card-text">Price: $XX.XX</p>
-              <a href="#" class="btn btn-primary btn-sm">Buy Now</a>
+              <a href="/payments" class="btn btn-primary btn-sm">Buy Now</a>
             </div>
           </div>
       </div>
@@ -158,7 +176,7 @@
             <div class="card-body">
               <h6 class="card-title mb-0">Product Name</h6>
               <p class="card-text">Price: $XX.XX</p>
-              <a href="#" class="btn btn-primary btn-sm">Buy Now</a>
+              <a href="/payments" class="btn btn-primary btn-sm">Buy Now</a>
             </div>
           </div>
       </div>
@@ -169,7 +187,7 @@
             <div class="card-body">
               <h6 class="card-title mb-0">Product Name</h6>
               <p class="card-text">Price: $XX.XX</p>
-              <a href="#" class="btn btn-primary btn-sm">Buy Now</a>
+              <a href="/payments" class="btn btn-primary btn-sm">Buy Now</a>
             </div>
           </div>
       </div>
@@ -180,7 +198,7 @@
             <div class="card-body">
               <h6 class="card-title mb-0">Product Name</h6>
               <p class="card-text">Price: $XX.XX</p>
-              <a href="#" class="btn btn-primary btn-sm">Buy Now</a>
+              <a href="/payments" class="btn btn-primary btn-sm">Buy Now</a>
             </div>
           </div>
       </div>
@@ -191,7 +209,7 @@
             <div class="card-body">
               <h6 class="card-title mb-0">Product Name</h6>
               <p class="card-text">Price: $XX.XX</p>
-              <a href="#" class="btn btn-primary btn-sm">Buy Now</a>
+              <a href="/payments" class="btn btn-primary btn-sm">Buy Now</a>
             </div>
           </div>
       </div>
@@ -202,7 +220,7 @@
             <div class="card-body">
               <h6 class="card-title mb-0">Product Name</h6>
               <p class="card-text">Price: $XX.XX</p>
-              <a href="#" class="btn btn-primary btn-sm">Buy Now</a>
+              <a href="/payments" class="btn btn-primary btn-sm">Buy Now</a>
             </div>
           </div>
       </div>
@@ -213,7 +231,7 @@
             <div class="card-body">
               <h6 class="card-title mb-0">Product Name</h6>
               <p class="card-text">Price: $XX.XX</p>
-              <a href="#" class="btn btn-primary btn-sm">Buy Now</a>
+              <a href="/payments" class="btn btn-primary btn-sm">Buy Now</a>
             </div>
           </div>
       </div>
@@ -224,7 +242,7 @@
             <div class="card-body">
               <h6 class="card-title mb-0">Product Name</h6>
               <p class="card-text">Price: $XX.XX</p>
-              <a href="#" class="btn btn-primary btn-sm">Buy Now</a>
+              <a href="/payments" class="btn btn-primary btn-sm">Buy Now</a>
             </div>
           </div>
       </div>
@@ -235,7 +253,7 @@
             <div class="card-body">
               <h6 class="card-title mb-0">Product Name</h6>
               <p class="card-text">Price: $XX.XX</p>
-              <a href="#" class="btn btn-primary btn-sm">Buy Now</a>
+              <a href="/payments" class="btn btn-primary btn-sm">Buy Now</a>
             </div>
           </div>
       </div>
@@ -246,7 +264,7 @@
             <div class="card-body">
               <h6 class="card-title mb-0">Product Name</h6>
               <p class="card-text">Price: $XX.XX</p>
-              <a href="#" class="btn btn-primary btn-sm">Buy Now</a>
+              <a href="/payments" class="btn btn-primary btn-sm">Buy Now</a>
             </div>
           </div>
       </div>
@@ -257,7 +275,7 @@
             <div class="card-body">
               <h6 class="card-title mb-0">Product Name</h6>
               <p class="card-text">Price: $XX.XX</p>
-              <a href="#" class="btn btn-primary btn-sm">Buy Now</a>
+              <a href="/payments" class="btn btn-primary btn-sm">Buy Now</a>
             </div>
           </div>
       </div>
@@ -268,7 +286,7 @@
             <div class="card-body">
               <h6 class="card-title mb-0">Product Name</h6>
               <p class="card-text">Price: $XX.XX</p>
-              <a href="#" class="btn btn-primary btn-sm">Buy Now</a>
+              <a href="/payments" class="btn btn-primary btn-sm">Buy Now</a>
             </div>
           </div>
       </div>
@@ -279,7 +297,7 @@
             <div class="card-body">
               <h6 class="card-title mb-0">Product Name</h6>
               <p class="card-text">Price: $XX.XX</p>
-              <a href="#" class="btn btn-primary btn-sm">Buy Now</a>
+              <a href="/payments" class="btn btn-primary btn-sm">Buy Now</a>
             </div>
           </div>
       </div>
@@ -290,7 +308,7 @@
             <div class="card-body">
               <h6 class="card-title mb-0">Product Name</h6>
               <p class="card-text">Price: $XX.XX</p>
-              <a href="#" class="btn btn-primary btn-sm">Buy Now</a>
+              <a href="/payments" class="btn btn-primary btn-sm">Buy Now</a>
             </div>
           </div>
       </div>
@@ -301,7 +319,7 @@
             <div class="card-body">
               <h6 class="card-title mb-0">Product Name</h6>
               <p class="card-text">Price: $XX.XX</p>
-              <a href="#" class="btn btn-primary btn-sm">Buy Now</a>
+              <a href="/payments" class="btn btn-primary btn-sm">Buy Now</a>
             </div>
           </div>
       </div>

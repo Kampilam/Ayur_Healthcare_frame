@@ -23,6 +23,14 @@ app.get('/services', (req, res) => {
     res.render('services', { jobs: JOBS});
 })
 
+app.get('/payments', (req, res) => {
+    res.render('payments', { jobs: JOBS});
+})
+
+app.post('/job/:id/apply', (req, res) => {
+    res.send("got the application");
+})
+
 app.get('/job/:id', (req, res) => {
     const id = req.params.id;
     const matchedJob = JOBS.find(job => job.id.toString() === id);

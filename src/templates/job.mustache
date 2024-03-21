@@ -30,7 +30,7 @@
           <!-- to do logo -->
           <!-- to do company name -->
           <div class="fw-bold text-center">
-            <a class="navbar-brand d-flex justify-content-start" href="#">
+            <a class="navbar-brand d-flex justify-content-start" href="/">
               <img src="/images/logo4.png" alt="Logo" width="35" height="35"
                 class="d-inline-block align-text-top">
               <span class="align-self-center">Ayur Healthcare</span>
@@ -41,13 +41,13 @@
         <div class="col-6 d-none d-md-block p-2 d-flex justify-content-end">
           <div class="d-flex justify-content-evenly">
             <div class="nav-list">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="/">Home</a>
             </div>
             <div class="nav-list">
-              <a class="nav-link" href="#">Jobs</a>
+              <a class="nav-link" href="/jobs">Jobs</a>
             </div>
             <div class="nav-list">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="/services">Services</a>
             </div>
           </div>
         </div>
@@ -59,9 +59,9 @@
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
             </div>
             <div class="offcanvas-body">
-              <h3 class="my-5 text-secondary"><a class="nav-link" href="#">Home</a></h3>
-              <h3 class="my-5 text-secondary"><a class="nav-link" href="#">jobs</a></h3>
-              <h3 class="my-5 text-secondary"><a class="nav-link" href="#">Services</a></h3>
+              <h3 class="my-5 text-secondary"><a class="nav-link" href="/">Home</a></h3>
+              <h3 class="my-5 text-secondary"><a class="nav-link" href="/jobs">jobs</a></h3>
+              <h3 class="my-5 text-secondary"><a class="nav-link" href="/services">Services</a></h3>
             </div>
           </div>
           <div class="col-6 d-flex justify-content-end d-md-none">
@@ -77,14 +77,14 @@
 
 <!--APPLICATION FORM-->
     <div class="container px-4 mt-5">
-        <h1 class="text-center">Thanks for Applying - {{job.title}}</h1>
+        <h1 class="text-center">Thank you for Applying - {{job.title}}</h1>
         <div class="text-center mb-5">
             {{job.location}} • {{job.salary}}
         </div>
         <form
           class="offset-lg-2 col-lg-8"
-          action="/jobs/{{job.id}}/apply"
-          method="POST"
+          action="/job/{{job.id}}/apply"
+          method="post"
         >
           <!--NAME-->
           <div class="mb-3 col-sm-6">
@@ -94,7 +94,7 @@
               class="form-control"
               name="name"
               required
-              placeholder="Last name First name"
+              placeholder="Last_name First_name"
               id="fullname"
             />
           </div>
@@ -165,7 +165,7 @@
           <div class="mb-3">
             <label for="coverletter" class="form-label">Cover Letter</label>
             <textarea
-              placeholder="Why we have to choose you"
+              placeholder="Tell me about yourself"
               class="form-control"
               id="coverletter"
               name="coverletter"
@@ -201,14 +201,6 @@
       </footer>
     </div>
   </div>
-
-
-
-
-
-
-
-
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
